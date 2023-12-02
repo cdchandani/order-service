@@ -7,11 +7,10 @@ import lombok.ToString;
 import org.hibernate.annotations.CreationTimestamp;
 
 import java.sql.Timestamp;
-import java.util.Date;
 
 ///home/hp/dev/work/FinancialData/orders_data/daywise_order_book_2023-01-19.csv
 @Entity
-@Table(name = "tbl_daywise_order", schema = "futures")
+@Table(name = "tbl_order", schema = "futures")
 @ToString
 @Getter
 @Setter
@@ -68,7 +67,6 @@ public class OrderBO {
     private Timestamp createdDt;
     @CreationTimestamp
     private Timestamp modifiedDt;
-
 
 
 }
